@@ -1,0 +1,9 @@
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Data\bin\Debug\netstandard2.0\LoyaltyPrime.Data.deps.json
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Data\bin\Debug\netstandard2.0\LoyaltyPrime.Data.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Data\bin\Debug\netstandard2.0\LoyaltyPrime.Data.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Data\obj\Debug\netstandard2.0\LoyaltyPrime.Data.csprojAssemblyReference.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Data\obj\Debug\netstandard2.0\LoyaltyPrime.Data.AssemblyInfoInputs.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Data\obj\Debug\netstandard2.0\LoyaltyPrime.Data.AssemblyInfo.cs
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Data\obj\Debug\netstandard2.0\LoyaltyPrime.Data.csproj.CoreCompileInputs.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Data\obj\Debug\netstandard2.0\LoyaltyPrime.Data.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Data\obj\Debug\netstandard2.0\LoyaltyPrime.Data.pdb
