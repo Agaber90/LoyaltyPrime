@@ -8,7 +8,5 @@ namespace LoyaltyPrime.Data
     {
         DateTime Createdate { get; set; }
         DateTime Updatedate { get; set; }
-        string Creator { get; set; }
-        string Updator { get; set; }
     }
 }

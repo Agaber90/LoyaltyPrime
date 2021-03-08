@@ -16,7 +16,5 @@ namespace LoyaltyPrime.Data.Enities
         public DateTime UpdatedDate { get; set; }
         public DateTime Createdate { get; set; }
         public DateTime Updatedate { get; set; }
-        public string Creator { get; set; }
-        public string Updator { get; set; }
     }
 }
