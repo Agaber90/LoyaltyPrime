@@ -7,3 +7,8 @@ C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\obj\Debug\n
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\obj\Debug\netstandard2.0\LoyaltyPrime.Presistance.csproj.CoreCompileInputs.cache
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\obj\Debug\netstandard2.0\LoyaltyPrime.Presistance.dll
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\obj\Debug\netstandard2.0\LoyaltyPrime.Presistance.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\bin\Debug\netstandard2.0\LoyaltyPrime.Data.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\bin\Debug\netstandard2.0\LoyaltyPrime.Service.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\bin\Debug\netstandard2.0\LoyaltyPrime.Data.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\bin\Debug\netstandard2.0\LoyaltyPrime.Service.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\obj\Debug\netstandard2.0\LoyaltyPrime.Presistance.csproj.CopyComplete

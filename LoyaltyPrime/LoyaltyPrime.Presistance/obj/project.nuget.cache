@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6o9HkJbZtCcr6duKrgXIdPcvVtQBnDQrtzLVQAfV0ujCdJcxvwtCK9SoiQTqJEDPZ04a5tiwArkMBN/15/VIXQ==",
+  "dgSpecHash": "BSvw3QzGauqXT9EgvDoVqPDjve8siIixA1F6ofm9jkyV6WaBHgGaTwrjWmLDvvr4ve/4/5v0ztOj4IYfKCcljg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Presistance\\LoyaltyPrime.Presistance.csproj",
   "expectedPackageFiles": [
@@ -55,7 +55,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.specialized\\4.3.0\\system.collections.specialized.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
-    "C:\\Users\\agibrahim\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\agibrahim\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.componentmodel.primitives\\4.3.0\\system.componentmodel.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.componentmodel.typeconverter\\4.3.0\\system.componentmodel.typeconverter.4.3.0.nupkg.sha512",
     "C:\\Users\\agibrahim\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",

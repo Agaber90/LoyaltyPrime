@@ -1,5 +1,7 @@
+using LoyaltyPrime.Service.Interfaces;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
@@ -13,7 +15,24 @@ namespace LoyaltyPrime
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            var host = CreateHostBuilder(args).Build();
+
+            using (var scope = host.Services.CreateScope())
+            {
+                try
+                {
+                    var context = scope.ServiceProvider.GetService<ILoyaltyPrimeDBEntities>();
+                    if (!context.Database.EnsureCreated())
+                    {
+                        context.Database.EnsureCreated();
+                    }
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+            host.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
