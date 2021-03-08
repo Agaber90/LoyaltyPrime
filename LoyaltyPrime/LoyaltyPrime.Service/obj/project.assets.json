@@ -2,6 +2,39 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Extensions.Configuration/0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Extensions.Configuration.Resolver": "0.0.4",
+          "Extensions.Configuration.Sources.Objects": "0.0.2"
+        }
+      },
+      "Extensions.Configuration.Resolver/0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
+          "System.Collections.Immutable": "1.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Extensions.Configuration.Resolver.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Extensions.Configuration.Resolver.dll": {}
+        }
+      },
+      "Extensions.Configuration.Sources.Objects/0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
+          "System.Collections.Immutable": "1.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Extensions.Configuration.Sources.Objects.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Extensions.Configuration.Sources.Objects.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -320,10 +353,64 @@
         "runtime": {
           "bin/placeholder/LoyaltyPrime.Data.dll": {}
         }
+      },
+      "LoyaltyPrime.Ground/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Extensions.Configuration": "0.0.4"
+        },
+        "compile": {
+          "bin/placeholder/LoyaltyPrime.Ground.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoyaltyPrime.Ground.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Extensions.Configuration/0.0.4": {
+      "sha512": "hknx9S+3AspC+VvjpzPqWQcHHpDj1o085b4xHjKnzN49mM3iDUxCAamJ52fwMw2sFdtrQ8dEQAbQLLsVgkdKXw==",
+      "type": "package",
+      "path": "extensions.configuration/0.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon1.xcf",
+        "Icon_bright.png",
+        "Icon_dark.png",
+        "extensions.configuration.0.0.4.nupkg.sha512",
+        "extensions.configuration.nuspec"
+      ]
+    },
+    "Extensions.Configuration.Resolver/0.0.4": {
+      "sha512": "FUnof3pnexDyry/XgnrBGrK8LXC0mpKNtsPs0HR/3fuKGgv5iWZY2b0I1oBLnIujlonB9seo0OyPUDqG03yVNQ==",
+      "type": "package",
+      "path": "extensions.configuration.resolver/0.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "extensions.configuration.resolver.0.0.4.nupkg.sha512",
+        "extensions.configuration.resolver.nuspec",
+        "lib/netstandard2.0/Extensions.Configuration.Resolver.dll",
+        "lib/netstandard2.0/Extensions.Configuration.Resolver.xml"
+      ]
+    },
+    "Extensions.Configuration.Sources.Objects/0.0.2": {
+      "sha512": "WezwREF/uKGWYg5J3bw8niP3V7u5UeqTnV1bk+MYvidRzR7hbkXfzOdf7pcnz16Q5Vg4ydz2Uke+XE2yCZA4UA==",
+      "type": "package",
+      "path": "extensions.configuration.sources.objects/0.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "extensions.configuration.sources.objects.0.0.2.nupkg.sha512",
+        "extensions.configuration.sources.objects.nuspec",
+        "lib/netstandard2.0/Extensions.Configuration.Sources.Objects.dll",
+        "lib/netstandard2.0/Extensions.Configuration.Sources.Objects.xml"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "sha512": "yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
       "type": "package",
@@ -1047,11 +1134,17 @@
       "type": "project",
       "path": "../LoyaltyPrime.Data/LoyaltyPrime.Data.csproj",
       "msbuildProject": "../LoyaltyPrime.Data/LoyaltyPrime.Data.csproj"
+    },
+    "LoyaltyPrime.Ground/1.0.0": {
+      "type": "project",
+      "path": "../LoyaltyPrime.Ground/LoyaltyPrime.Ground.csproj",
+      "msbuildProject": "../LoyaltyPrime.Ground/LoyaltyPrime.Ground.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "LoyaltyPrime.Data >= 1.0.0",
+      "LoyaltyPrime.Ground >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.5",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -1090,6 +1183,9 @@
           "projectReferences": {
             "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Data\\LoyaltyPrime.Data.csproj": {
               "projectPath": "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Data\\LoyaltyPrime.Data.csproj"
+            },
+            "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Ground\\LoyaltyPrime.Ground.csproj": {
+              "projectPath": "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Ground\\LoyaltyPrime.Ground.csproj"
             }
           }
         }

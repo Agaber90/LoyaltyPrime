@@ -1,0 +1,9 @@
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Ground\bin\Debug\netstandard2.0\LoyaltyPrime.Ground.deps.json
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Ground\bin\Debug\netstandard2.0\LoyaltyPrime.Ground.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Ground\bin\Debug\netstandard2.0\LoyaltyPrime.Ground.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Ground\obj\Debug\netstandard2.0\LoyaltyPrime.Ground.csprojAssemblyReference.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Ground\obj\Debug\netstandard2.0\LoyaltyPrime.Ground.AssemblyInfoInputs.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Ground\obj\Debug\netstandard2.0\LoyaltyPrime.Ground.AssemblyInfo.cs
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Ground\obj\Debug\netstandard2.0\LoyaltyPrime.Ground.csproj.CoreCompileInputs.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Ground\obj\Debug\netstandard2.0\LoyaltyPrime.Ground.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Ground\obj\Debug\netstandard2.0\LoyaltyPrime.Ground.pdb

@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoyaltyPrime.Presistance", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoyaltyPrime.Service", "LoyaltyPrime.Service\LoyaltyPrime.Service.csproj", "{51AECB64-080B-402F-B7A8-C4BB1549F5FF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{A6CF2881-17F6-49FA-85BB-5D6FA8A43A34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoyaltyPrime.Ground", "LoyaltyPrime.Ground\LoyaltyPrime.Ground.csproj", "{E40A2146-5562-49E0-A139-E79A6B1D9B01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{51AECB64-080B-402F-B7A8-C4BB1549F5FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51AECB64-080B-402F-B7A8-C4BB1549F5FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51AECB64-080B-402F-B7A8-C4BB1549F5FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E40A2146-5562-49E0-A139-E79A6B1D9B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40A2146-5562-49E0-A139-E79A6B1D9B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40A2146-5562-49E0-A139-E79A6B1D9B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E40A2146-5562-49E0-A139-E79A6B1D9B01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{F9A471F3-C35F-4CE9-853B-D1588A7A6F2E} = {CC7A1B7C-F2B5-4A04-8620-0A8C256477DE}
 		{7D244BE4-0E8F-4AC2-AE49-24EA64BC964C} = {6E86085A-8146-46D1-92B0-C3DD4B0DF8B0}
 		{51AECB64-080B-402F-B7A8-C4BB1549F5FF} = {CC7A1B7C-F2B5-4A04-8620-0A8C256477DE}
+		{E40A2146-5562-49E0-A139-E79A6B1D9B01} = {A6CF2881-17F6-49FA-85BB-5D6FA8A43A34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD1AB54D-28AA-48B3-B3FC-D02264847436}

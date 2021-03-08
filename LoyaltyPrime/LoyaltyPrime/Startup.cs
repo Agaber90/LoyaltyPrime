@@ -1,3 +1,4 @@
+using LoyaltyPrime.Ground;
 using LoyaltyPrime.Presistance;
 using LoyaltyPrime.Service.Interfaces;
 using Microsoft.AspNetCore.Builder;
@@ -29,8 +30,7 @@ namespace LoyaltyPrime
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHttpClient();
-            services.AddScoped<DbContext, LoyaltyPrimeDBEntities>();
-            services.AddDbContext<ILoyaltyPrimeDBEntities, LoyaltyPrimeDBEntities>(Db => Db.UseSqlServer(Configuration.GetConnectionString("LoyaltyPrimeConnectionString")));
+            services.AddDbContext<ILoyaltyPrimeDBEntities, LoyaltyPrimeDBEntities>(o => o.UseSqlServer(Configuration.GetConnectionString("LoyaltyPrimeConnectionString")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

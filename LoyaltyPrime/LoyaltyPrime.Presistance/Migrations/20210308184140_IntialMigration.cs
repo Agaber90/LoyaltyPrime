@@ -11,16 +11,20 @@ namespace LoyaltyPrime.Presistance.Migrations
                 name: "Member",
                 columns: table => new
                 {
-                    ID = table.Column<long>(nullable: false)
+                    Id = table.Column<long>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
                     CreatedDate = table.Column<DateTime>(nullable: false),
-                    UpdatedDate = table.Column<DateTime>(nullable: false)
+                    UpdatedDate = table.Column<DateTime>(nullable: false),
+                    Createdate = table.Column<DateTime>(nullable: false),
+                    Updatedate = table.Column<DateTime>(nullable: false),
+                    Creator = table.Column<string>(nullable: true),
+                    Updator = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Member", x => x.ID);
+                    table.PrimaryKey("PK_Member", x => x.Id);
                 });
         }
 

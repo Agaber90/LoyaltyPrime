@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LoyaltyPrime.Presistance.Migrations
 {
     [DbContext(typeof(LoyaltyPrimeDBEntities))]
-    [Migration("20210308143807_IntialMigration")]
+    [Migration("20210308184140_IntialMigration")]
     partial class IntialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,13 +23,19 @@ namespace LoyaltyPrime.Presistance.Migrations
 
             modelBuilder.Entity("LoyaltyPrime.Data.Enities.Member", b =>
                 {
-                    b.Property<long>("ID")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Createdate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Creator")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
@@ -40,7 +46,13 @@ namespace LoyaltyPrime.Presistance.Migrations
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("ID");
+                    b.Property<DateTime>("Updatedate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Updator")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
 
                     b.ToTable("Member");
                 });

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LoyaltyPrime.Data\LoyaltyPrime.Data.csproj" />
+    <ProjectReference Include="..\LoyaltyPrime.Ground\LoyaltyPrime.Ground.csproj" />
   </ItemGroup>
 
 </Project>
