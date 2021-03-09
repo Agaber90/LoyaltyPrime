@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LoyaltyPrime.Service.Interfaces
 {
-    public interface ILoyaltyPrimeDBEntities: IDisposable
+    public interface ILoyaltyPrimeDBEntities : IDisposable
     {
         DbSet<T> Set<T>() where T : class;
         int SaveChanges();
@@ -20,5 +20,6 @@ namespace LoyaltyPrime.Service.Interfaces
         DatabaseFacade Database { get; }
 
         DbSet<Member> Member { get; set; }
+        DbSet<Account> Account { get; set; }
     }
 }

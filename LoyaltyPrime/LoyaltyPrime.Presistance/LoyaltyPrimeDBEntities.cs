@@ -1,5 +1,6 @@
 ﻿using LoyaltyPrime.Data;
 using LoyaltyPrime.Data.Enities;
+using LoyaltyPrime.Presistance.Extensions;
 using LoyaltyPrime.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -20,9 +21,18 @@ namespace LoyaltyPrime.Presistance
         }
 
         public virtual DbSet<Member> Member { get; set; }
+        public DbSet<Account> Account { get; set; }
+
         public new DbSet<TEntity> Set<TEntity>() where TEntity : class
         {
             return base.Set<TEntity>();
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.RemovePluralizingTableNameConvention();
+
+            modelBuilder.Entity<Member>().HasMany(a => a.Accounts).WithOne(a => a.Member);
         }
         public override int SaveChanges()
         {

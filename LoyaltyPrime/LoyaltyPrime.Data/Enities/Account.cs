@@ -5,16 +5,16 @@ using System.Text;
 
 namespace LoyaltyPrime.Data.Enities
 {
-    public class Member : IEntity, IEntityTracker
+    public class Account : IEntity, IEntityTracker
     {
         [Key]
         public long Id { get; set; }
         public string Name { get; set; }
+        public bool Status { get; set; }
 
-        public string Address { get; set; }
+        public virtual Member Member { get; set; }
+        public long Balance { get; set; }
         public DateTime Createdate { get; set; }
         public DateTime Updatedate { get; set; }
-        public virtual ICollection<Account>Accounts { get; set; }
-       
     }
 }

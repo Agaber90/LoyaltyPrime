@@ -22,10 +22,8 @@ namespace LoyaltyPrime
                 try
                 {
                     var context = scope.ServiceProvider.GetService<ILoyaltyPrimeDBEntities>();
-                    if (!context.Database.EnsureCreated())
-                    {
-                        context.Database.EnsureCreated();
-                    }
+                    context.Database.EnsureCreated();
+
                 }
                 catch (Exception)
                 {
