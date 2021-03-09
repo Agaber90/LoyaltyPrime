@@ -4,5 +4,35 @@
         <name>LoyaltyPrime.API</name>
     </assembly>
     <members>
+        <member name="T:LoyaltyPrime.API.Controllers.MemberController">
+            <summary>
+            All Members Operations
+            </summary>
+        </member>
+        <member name="M:LoyaltyPrime.API.Controllers.MemberController.#ctor(System.Lazy{LoyaltyPrime.Service.Interfaces.Services.IMemberService})">
+            <summary>
+            Constractor
+            </summary>
+            <param name="memberService"></param>
+        </member>
+        <member name="M:LoyaltyPrime.API.Controllers.MemberController.CreateMember(LoyaltyPrime.DTO.Models.DTOMember)">
+             <summary>
+             Create a new member
+             </summary>
+             <param name="memberModel"></param>
+             <returns>A newly created member</returns>
+            <response code="200">Returns the newly created member</response>
+            <response code="400">If the member is null</response> 
+             <remarks>
+             Sample request:
+            
+                 POST /member/createMember
+                 {
+                    "Name": "test",
+                    "Email": "test@hh.com"
+                 }
+            
+             </remarks>
+        </member>
     </members>
 </doc>

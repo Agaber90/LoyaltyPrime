@@ -38,7 +38,7 @@ namespace LoyaltyPrime.Service.Implementation.Services
         public async Task<ServiceResultDetail<DTOMember>> AddMember(DTOMember memberModel)
         {
 
-            var validateMember = await MemberServiceValidator.AddEditMemberValidator(memberModel);
+            var validateMember = await MemberServiceValidator.AddMemberValidator(memberModel);
             if (!validateMember.IsValid)
             {
                 return new ServiceResultDetail<DTOMember>()
@@ -59,7 +59,7 @@ namespace LoyaltyPrime.Service.Implementation.Services
                 memberModel.Id = createMember.Id;
                 return new ServiceResultDetail<DTOMember>()
                 {
-                    Model = memberModel
+                    Model = memberModel,
                 };
             }
             return new ServiceResultDetail<DTOMember>()

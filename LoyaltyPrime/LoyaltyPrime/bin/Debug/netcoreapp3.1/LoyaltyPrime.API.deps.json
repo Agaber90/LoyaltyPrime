@@ -1427,6 +1427,9 @@
         }
       },
       "LoyaltyPrime.DTO/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "runtime": {
           "LoyaltyPrime.DTO.dll": {}
         },

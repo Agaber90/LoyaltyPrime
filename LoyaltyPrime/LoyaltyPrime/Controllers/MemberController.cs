@@ -3,8 +3,6 @@ using LoyaltyPrime.Service.Interfaces.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace LoyaltyPrime.API.Controllers
@@ -36,9 +34,19 @@ namespace LoyaltyPrime.API.Controllers
         /// <returns>A newly created member</returns>
         ///<response code="200">Returns the newly created member</response>
         ///<response code="400">If the member is null</response> 
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST /member/createMember
+        ///     {
+        ///        "Name": "test",
+        ///        "Email": "test@hh.com"
+        ///     }
+        ///
+        /// </remarks>
         [HttpPost]
         [Route("member/createMember", Name = "CreateMamber")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DTOMember))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> CreateMember(DTOMember memberModel)
         {
@@ -47,7 +55,7 @@ namespace LoyaltyPrime.API.Controllers
             var memberResult = await MemberService.AddMember(memberModel);
             if (!memberResult.IsValid) return GetErrorResult(memberResult);
 
-            return Ok();
+            return Ok(memberResult);
         }
     }
 }
