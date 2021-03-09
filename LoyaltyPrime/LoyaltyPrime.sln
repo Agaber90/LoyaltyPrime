@@ -21,9 +21,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{A6CF28
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoyaltyPrime.Ground", "LoyaltyPrime.Ground\LoyaltyPrime.Ground.csproj", "{E40A2146-5562-49E0-A139-E79A6B1D9B01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoyaltyPrime.DTO", "LoyaltyPrime.DTO\LoyaltyPrime.DTO.csproj", "{5444BD3E-B232-4D96-A7A7-E32582665C1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoyaltyPrime.DTO", "LoyaltyPrime.DTO\LoyaltyPrime.DTO.csproj", "{5444BD3E-B232-4D96-A7A7-E32582665C1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoyaltyPrime.Language", "LoyaltyPrime.Language\LoyaltyPrime.Language.csproj", "{32874ADF-2B5C-4E3B-93AA-E7CB522F9020}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoyaltyPrime.Language", "LoyaltyPrime.Language\LoyaltyPrime.Language.csproj", "{32874ADF-2B5C-4E3B-93AA-E7CB522F9020}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

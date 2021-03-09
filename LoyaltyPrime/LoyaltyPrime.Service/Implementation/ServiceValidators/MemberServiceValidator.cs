@@ -26,6 +26,7 @@ namespace LoyaltyPrime.Service.Implementation.ServiceValidators
         /// <returns></returns>
         public async Task<ValidatorResult> AddMemberValidator(DTOMember dTOMember)
         {
+
             var memberTasks = new List<Task<ValidatorResult>>()
             {
                 MemberValidator.ValidateMemberName(dTOMember.Name),
@@ -35,6 +36,8 @@ namespace LoyaltyPrime.Service.Implementation.ServiceValidators
             await Task.WhenAll(memberTasks);
             var taskResult = memberTasks.Select(a => a.Result).FirstOrDefault(a => !a.IsValid);
             if (taskResult != null) return taskResult;
+
+
             return new ValidatorResult();
         }
     }
