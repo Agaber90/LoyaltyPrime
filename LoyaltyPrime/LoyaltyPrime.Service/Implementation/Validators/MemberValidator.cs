@@ -13,6 +13,11 @@ namespace LoyaltyPrime.Service.Implementation.Validators
 {
     public class MemberValidator : IMemberValidator
     {
+        /// <summary>
+        /// Validate if member's email isn't empty
+        /// </summary>
+        /// <param name="memberEmail"></param>
+        /// <returns></returns>
         public async Task<ValidatorResult> ValidateMemberEmail(string memberEmail)
         {
             if (string.IsNullOrEmpty(memberEmail))
@@ -26,6 +31,11 @@ namespace LoyaltyPrime.Service.Implementation.Validators
             return new ValidatorResult();
         }
 
+        /// <summary>
+        /// Validate if the member has corret email format
+        /// </summary>
+        /// <param name="memberEmail"></param>
+        /// <returns></returns>
         public async Task<ValidatorResult> ValidateMemberEmailPattern(string memberEmail)
         {
 
@@ -40,6 +50,11 @@ namespace LoyaltyPrime.Service.Implementation.Validators
             return new ValidatorResult();
         }
 
+        /// <summary>
+        /// Validate if Member has a valid Name
+        /// </summary>
+        /// <param name="memberName"></param>
+        /// <returns></returns>
         public async Task<ValidatorResult> ValidateMemberName(string memberName)
         {
             if (string.IsNullOrEmpty(memberName))

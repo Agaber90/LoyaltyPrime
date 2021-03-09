@@ -9,6 +9,6 @@ namespace LoyaltyPrime.Service.Interfaces.ServiceValidators
 {
     public interface IMemberServiceValidator
     {
-        Task<ValidatorResult> AddEditMemberValidator(DTOMember dTOMember);
+        Task<ValidatorResult> AddMemberValidator(DTOMember dTOMember);
     }
 }

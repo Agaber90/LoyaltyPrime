@@ -18,7 +18,13 @@ namespace LoyaltyPrime.Service.Implementation.ServiceValidators
             _memberValidator = memberValidator;
         }
         private IMemberValidator MemberValidator => _memberValidator.Value;
-        public async Task<ValidatorResult> AddEditMemberValidator(DTOMember dTOMember)
+
+        /// <summary>
+        /// Validate Member Data
+        /// </summary>
+        /// <param name="dTOMember"></param>
+        /// <returns></returns>
+        public async Task<ValidatorResult> AddMemberValidator(DTOMember dTOMember)
         {
             var memberTasks = new List<Task<ValidatorResult>>()
             {

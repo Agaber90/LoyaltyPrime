@@ -29,6 +29,12 @@ namespace LoyaltyPrime.Service.Implementation.Services
         private IMemberServiceValidator MemberServiceValidator => _memberServiceValidator.Value;
         private IMemberFactory MemberFactory => _memberFactory.Value;
         private IMemberRepository MemberRepository => _memberRepository.Value;
+
+        /// <summary>
+        /// Add new Member
+        /// </summary>
+        /// <param name="memberModel"></param>
+        /// <returns></returns>
         public async Task<ServiceResultDetail<DTOMember>> AddMember(DTOMember memberModel)
         {
 

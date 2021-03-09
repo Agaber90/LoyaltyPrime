@@ -19,13 +19,21 @@ namespace LoyaltyPrime.Presistance.CoreImplementation
         }
         protected ILoyaltyPrimeDBEntities LoyaltyPrimeEntities => _loyaltyPrimeEntities;
 
-
+        /// <summary>
+        /// Get Member by Id
+        /// </summary>
+        /// <param name="memberId"></param>
+        /// <returns></returns>
         public async Task<Member> GetMemberById(int memberId)
         {
             var member = await LoyaltyPrimeEntities.Member.FirstOrDefaultAsync(a => a.Id == memberId);
             return member;
         }
 
+        /// <summary>
+        /// Get List of member
+        /// </summary>
+        /// <returns></returns>
         public async Task<IQueryable<Member>> GetMembers()
         {
             var members = LoyaltyPrimeEntities.Member.AsQueryable();

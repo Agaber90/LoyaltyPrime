@@ -10,6 +10,11 @@ namespace LoyaltyPrime.Presistance.CoreImplementation.Factories
 {
     public class MemberFactory : IMemberFactory
     {
+        /// <summary>
+        /// Map Member from Dto to the member entity
+        /// </summary>
+        /// <param name="memberModel"></param>
+        /// <returns></returns>
         public async Task<Member> CreateMember(DTOMember memberModel)
         {
             return new Member()
