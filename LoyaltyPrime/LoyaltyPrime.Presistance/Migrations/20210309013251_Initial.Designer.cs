@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LoyaltyPrime.Presistance.Migrations
 {
     [DbContext(typeof(LoyaltyPrimeDBEntities))]
-    [Migration("20210308184140_IntialMigration")]
-    partial class IntialMigration
+    [Migration("20210309013251_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,14 +28,8 @@ namespace LoyaltyPrime.Presistance.Migrations
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("Createdate")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Creator")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
@@ -43,14 +37,8 @@ namespace LoyaltyPrime.Presistance.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("Updatedate")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Updator")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

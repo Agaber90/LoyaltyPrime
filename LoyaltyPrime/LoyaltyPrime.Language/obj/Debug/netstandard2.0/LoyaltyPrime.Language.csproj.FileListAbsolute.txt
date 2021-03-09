@@ -1,0 +1,12 @@
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Language\bin\Debug\netstandard2.0\LoyaltyPrime.Language.deps.json
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Language\bin\Debug\netstandard2.0\LoyaltyPrime.Language.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Language\bin\Debug\netstandard2.0\LoyaltyPrime.Language.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Language\obj\Debug\netstandard2.0\LoyaltyPrime.Language.csprojAssemblyReference.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Language\obj\Debug\netstandard2.0\LoyaltyPrime.Language.Resources.Resource.resources
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Language\obj\Debug\netstandard2.0\LoyaltyPrime.Language.Resources.ResourceDeutsch.resources
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Language\obj\Debug\netstandard2.0\LoyaltyPrime.Language.csproj.GenerateResource.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Language\obj\Debug\netstandard2.0\LoyaltyPrime.Language.AssemblyInfoInputs.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Language\obj\Debug\netstandard2.0\LoyaltyPrime.Language.AssemblyInfo.cs
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Language\obj\Debug\netstandard2.0\LoyaltyPrime.Language.csproj.CoreCompileInputs.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Language\obj\Debug\netstandard2.0\LoyaltyPrime.Language.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Language\obj\Debug\netstandard2.0\LoyaltyPrime.Language.pdb

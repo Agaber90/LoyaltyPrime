@@ -14,3 +14,7 @@ C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\bin\Debug\n
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\obj\Debug\netstandard2.0\LoyaltyPrime.Presistance.csproj.CopyComplete
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\bin\Debug\netstandard2.0\LoyaltyPrime.Ground.dll
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\bin\Debug\netstandard2.0\LoyaltyPrime.Ground.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\bin\Debug\netstandard2.0\LoyaltyPrime.DTO.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\bin\Debug\netstandard2.0\LoyaltyPrime.Language.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\bin\Debug\netstandard2.0\LoyaltyPrime.DTO.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Presistance\bin\Debug\netstandard2.0\LoyaltyPrime.Language.pdb

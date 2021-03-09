@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LoyaltyPrime.Ground.Enums
+namespace LoyaltyPrime.Ground
 {
     public enum ValidationStatusEnum
     {
@@ -11,5 +11,14 @@ namespace LoyaltyPrime.Ground.Enums
         Unauthorized = 401,
         Accepted = 202,
         OK = 200
+
+    }
+
+    public enum ValidationStatus
+    {
+        BadRequest = 400,
+        NotFound = 404,
+        Unauthorized = 401,
+        Accepted = 202
     }
 }

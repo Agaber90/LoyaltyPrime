@@ -19,6 +19,7 @@ namespace LoyaltyPrime.Presistance.CoreImplementation
         }
         protected ILoyaltyPrimeDBEntities LoyaltyPrimeEntities => _loyaltyPrimeEntities;
 
+
         public async Task<Member> GetMemberById(int memberId)
         {
             var member = await LoyaltyPrimeEntities.Member.FirstOrDefaultAsync(a => a.Id == memberId);

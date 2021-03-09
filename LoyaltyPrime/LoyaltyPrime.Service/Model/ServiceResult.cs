@@ -1,7 +1,7 @@
-﻿using LoyaltyPrime.Ground.Enums;
-using System;
+﻿
+
+using LoyaltyPrime.Ground;
 using System.Collections.Generic;
-using System.Text;
 
 namespace LoyaltyPrime.Service.Model
 {
@@ -9,7 +9,7 @@ namespace LoyaltyPrime.Service.Model
     {
         List<string> Messages { get; set; }
         bool IsValid { get; set; }
-        ValidationStatusEnum? Status { get; set; }
+        ValidationStatus? Status { get; set; }
     }
     public class ServiceResultDetail<T> : IServiceResult<T> where T : class
     {
@@ -22,19 +22,7 @@ namespace LoyaltyPrime.Service.Model
         public List<string> Messages { get; set; }
         public bool IsValid { get; set; }
         public long SubTotalCount { get; set; }
-        public ValidationStatusEnum? Status { get; set; }
+        public ValidationStatus? Status { get; set; }
     }
-    public class ServiceResultList<T> : IServiceResult<T> where T : class
-    {
-        public ServiceResultList()
-        {
-            IsValid = true;
-            Messages = new List<string>();
-        }
-        public List<T> Model { get; set; }
-        public List<string> Messages { get; set; }
-        public bool IsValid { get; set; }
-        public long Count { get; set; }
-        public ValidationStatusEnum? Status { get; set; }
-    }
+
 }

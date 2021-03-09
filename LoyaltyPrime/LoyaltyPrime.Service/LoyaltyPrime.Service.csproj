@@ -10,7 +10,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LoyaltyPrime.Data\LoyaltyPrime.Data.csproj" />
+    <ProjectReference Include="..\LoyaltyPrime.DTO\LoyaltyPrime.DTO.csproj" />
     <ProjectReference Include="..\LoyaltyPrime.Ground\LoyaltyPrime.Ground.csproj" />
+    <ProjectReference Include="..\LoyaltyPrime.Language\LoyaltyPrime.Language.csproj" />
   </ItemGroup>
 
 </Project>

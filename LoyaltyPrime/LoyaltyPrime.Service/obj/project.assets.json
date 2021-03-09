@@ -354,6 +354,16 @@
           "bin/placeholder/LoyaltyPrime.Data.dll": {}
         }
       },
+      "LoyaltyPrime.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/LoyaltyPrime.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoyaltyPrime.DTO.dll": {}
+        }
+      },
       "LoyaltyPrime.Ground/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -365,6 +375,16 @@
         },
         "runtime": {
           "bin/placeholder/LoyaltyPrime.Ground.dll": {}
+        }
+      },
+      "LoyaltyPrime.Language/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/LoyaltyPrime.Language.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LoyaltyPrime.Language.dll": {}
         }
       }
     }
@@ -1135,16 +1155,28 @@
       "path": "../LoyaltyPrime.Data/LoyaltyPrime.Data.csproj",
       "msbuildProject": "../LoyaltyPrime.Data/LoyaltyPrime.Data.csproj"
     },
+    "LoyaltyPrime.DTO/1.0.0": {
+      "type": "project",
+      "path": "../LoyaltyPrime.DTO/LoyaltyPrime.DTO.csproj",
+      "msbuildProject": "../LoyaltyPrime.DTO/LoyaltyPrime.DTO.csproj"
+    },
     "LoyaltyPrime.Ground/1.0.0": {
       "type": "project",
       "path": "../LoyaltyPrime.Ground/LoyaltyPrime.Ground.csproj",
       "msbuildProject": "../LoyaltyPrime.Ground/LoyaltyPrime.Ground.csproj"
+    },
+    "LoyaltyPrime.Language/1.0.0": {
+      "type": "project",
+      "path": "../LoyaltyPrime.Language/LoyaltyPrime.Language.csproj",
+      "msbuildProject": "../LoyaltyPrime.Language/LoyaltyPrime.Language.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "LoyaltyPrime.DTO >= 1.0.0",
       "LoyaltyPrime.Data >= 1.0.0",
       "LoyaltyPrime.Ground >= 1.0.0",
+      "LoyaltyPrime.Language >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.5",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -1184,8 +1216,14 @@
             "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Data\\LoyaltyPrime.Data.csproj": {
               "projectPath": "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Data\\LoyaltyPrime.Data.csproj"
             },
+            "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.DTO\\LoyaltyPrime.DTO.csproj": {
+              "projectPath": "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.DTO\\LoyaltyPrime.DTO.csproj"
+            },
             "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Ground\\LoyaltyPrime.Ground.csproj": {
               "projectPath": "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Ground\\LoyaltyPrime.Ground.csproj"
+            },
+            "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Language\\LoyaltyPrime.Language.csproj": {
+              "projectPath": "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Language\\LoyaltyPrime.Language.csproj"
             }
           }
         }

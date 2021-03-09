@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LoyaltyPrime.Presistance.Migrations
 {
-    public partial class IntialMigration : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,12 +15,8 @@ namespace LoyaltyPrime.Presistance.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
-                    CreatedDate = table.Column<DateTime>(nullable: false),
-                    UpdatedDate = table.Column<DateTime>(nullable: false),
                     Createdate = table.Column<DateTime>(nullable: false),
-                    Updatedate = table.Column<DateTime>(nullable: false),
-                    Creator = table.Column<string>(nullable: true),
-                    Updator = table.Column<string>(nullable: true)
+                    Updatedate = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {

@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoyaltyPrime.Ground", "Loya
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoyaltyPrime.DTO", "LoyaltyPrime.DTO\LoyaltyPrime.DTO.csproj", "{5444BD3E-B232-4D96-A7A7-E32582665C1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoyaltyPrime.Language", "LoyaltyPrime.Language\LoyaltyPrime.Language.csproj", "{32874ADF-2B5C-4E3B-93AA-E7CB522F9020}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{5444BD3E-B232-4D96-A7A7-E32582665C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5444BD3E-B232-4D96-A7A7-E32582665C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5444BD3E-B232-4D96-A7A7-E32582665C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32874ADF-2B5C-4E3B-93AA-E7CB522F9020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32874ADF-2B5C-4E3B-93AA-E7CB522F9020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32874ADF-2B5C-4E3B-93AA-E7CB522F9020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32874ADF-2B5C-4E3B-93AA-E7CB522F9020}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{51AECB64-080B-402F-B7A8-C4BB1549F5FF} = {CC7A1B7C-F2B5-4A04-8620-0A8C256477DE}
 		{E40A2146-5562-49E0-A139-E79A6B1D9B01} = {A6CF2881-17F6-49FA-85BB-5D6FA8A43A34}
 		{5444BD3E-B232-4D96-A7A7-E32582665C1A} = {CC7A1B7C-F2B5-4A04-8620-0A8C256477DE}
+		{32874ADF-2B5C-4E3B-93AA-E7CB522F9020} = {A6CF2881-17F6-49FA-85BB-5D6FA8A43A34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD1AB54D-28AA-48B3-B3FC-D02264847436}

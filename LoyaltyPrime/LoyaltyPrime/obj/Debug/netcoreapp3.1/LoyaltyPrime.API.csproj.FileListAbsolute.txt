@@ -65,3 +65,13 @@ C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1\LoyaltyPrime.Ground.dll
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1\LoyaltyPrime.Ground.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1\LoyaltyPrime.DTO.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1\LoyaltyPrime.Language.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1\LoyaltyPrime.DTO.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1\LoyaltyPrime.Language.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1\LoyaltyPrime.API.xml
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime\obj\Debug\netcoreapp3.1\LoyaltyPrime.API.MvcApplicationPartsAssemblyInfo.cs

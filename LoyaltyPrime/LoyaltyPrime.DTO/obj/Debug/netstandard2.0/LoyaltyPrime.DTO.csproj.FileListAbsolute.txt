@@ -1,0 +1,9 @@
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\bin\Debug\netstandard2.0\LoyaltyPrime.DTO.deps.json
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\bin\Debug\netstandard2.0\LoyaltyPrime.DTO.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\bin\Debug\netstandard2.0\LoyaltyPrime.DTO.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\obj\Debug\netstandard2.0\LoyaltyPrime.DTO.csprojAssemblyReference.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\obj\Debug\netstandard2.0\LoyaltyPrime.DTO.AssemblyInfoInputs.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\obj\Debug\netstandard2.0\LoyaltyPrime.DTO.AssemblyInfo.cs
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\obj\Debug\netstandard2.0\LoyaltyPrime.DTO.csproj.CoreCompileInputs.cache
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\obj\Debug\netstandard2.0\LoyaltyPrime.DTO.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\obj\Debug\netstandard2.0\LoyaltyPrime.DTO.pdb

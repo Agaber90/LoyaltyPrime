@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "6QZTm9gXiyfswGdjaRx1/6mYsMK/dPTF9/c71WHwp5e7LuRMrn+EJgT1Ds4IVCgxZ070Iz2q4oZbZgvOUBjd4w==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Language\\LoyaltyPrime.Language.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

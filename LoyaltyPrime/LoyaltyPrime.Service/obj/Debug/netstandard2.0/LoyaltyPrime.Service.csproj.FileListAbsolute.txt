@@ -12,3 +12,7 @@ C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Service\obj\Debug\netst
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Service\obj\Debug\netstandard2.0\LoyaltyPrime.Service.pdb
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Service\bin\Debug\netstandard2.0\LoyaltyPrime.Ground.dll
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Service\bin\Debug\netstandard2.0\LoyaltyPrime.Ground.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Service\bin\Debug\netstandard2.0\LoyaltyPrime.DTO.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Service\bin\Debug\netstandard2.0\LoyaltyPrime.Language.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Service\bin\Debug\netstandard2.0\LoyaltyPrime.DTO.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.Service\bin\Debug\netstandard2.0\LoyaltyPrime.Language.pdb
