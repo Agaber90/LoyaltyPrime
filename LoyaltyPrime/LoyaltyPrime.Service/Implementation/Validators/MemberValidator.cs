@@ -18,37 +18,20 @@ namespace LoyaltyPrime.Service.Implementation.Validators
         /// </summary>
         /// <param name="memberEmail"></param>
         /// <returns></returns>
-        public async Task<ValidatorResult> ValidateMemberEmail(string memberEmail)
+        public async Task<ValidatorResult> ValidateMemberAddress(string memberAddress)
         {
-            if (string.IsNullOrEmpty(memberEmail))
+            if (string.IsNullOrEmpty(memberAddress))
             {
                 return new ValidatorResult()
                 {
                     IsValid = false,
-                    Message = Resource.EmptyEmail
+                    Message = Resource.EmptyAddress
                 };
             }
             return new ValidatorResult();
         }
 
-        /// <summary>
-        /// Validate if the member has corret email format
-        /// </summary>
-        /// <param name="memberEmail"></param>
-        /// <returns></returns>
-        public async Task<ValidatorResult> ValidateMemberEmailPattern(string memberEmail)
-        {
-
-            if (!isValidEmailFormat(memberEmail))
-            {
-                return new ValidatorResult()
-                {
-                    IsValid = false,
-                    Message = Resource.EmailValidation
-                };
-            }
-            return new ValidatorResult();
-        }
+       
 
         /// <summary>
         /// Validate if Member has a valid Name
@@ -68,12 +51,5 @@ namespace LoyaltyPrime.Service.Implementation.Validators
             return new ValidatorResult();
         }
 
-        private bool isValidEmailFormat(string emailaddress)
-        {
-            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-            Match match = regex.Match(emailaddress);
-            if (match.Success) return true;
-            return false;
-        }
     }
 }

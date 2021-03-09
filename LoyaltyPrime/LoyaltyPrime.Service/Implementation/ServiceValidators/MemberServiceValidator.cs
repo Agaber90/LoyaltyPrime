@@ -30,8 +30,7 @@ namespace LoyaltyPrime.Service.Implementation.ServiceValidators
             var memberTasks = new List<Task<ValidatorResult>>()
             {
                 MemberValidator.ValidateMemberName(dTOMember.Name),
-                MemberValidator.ValidateMemberEmail(dTOMember.Email),
-                MemberValidator.ValidateMemberEmailPattern(dTOMember.Email),
+                MemberValidator.ValidateMemberAddress(dTOMember.Address),
             };
             await Task.WhenAll(memberTasks);
             var taskResult = memberTasks.Select(a => a.Result).FirstOrDefault(a => !a.IsValid);

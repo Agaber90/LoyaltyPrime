@@ -10,8 +10,7 @@ namespace LoyaltyPrime.Service.Interfaces.Validators
     public interface IMemberValidator
     {
         Task<ValidatorResult> ValidateMemberName(string memberName);
-        Task<ValidatorResult> ValidateMemberEmail(string memberEmail);
-        Task<ValidatorResult> ValidateMemberEmailPattern(string memberEmail);
+        Task<ValidatorResult> ValidateMemberAddress(string memberEmail);
 
     }
 }

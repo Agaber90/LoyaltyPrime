@@ -11,7 +11,7 @@ namespace LoyaltyPrime.Data.Enities
         public long Id { get; set; }
         public string Name { get; set; }
 
-        public string Email { get; set; }
+        public string Address { get; set; }
         public DateTime Createdate { get; set; }
         public DateTime Updatedate { get; set; }
     }

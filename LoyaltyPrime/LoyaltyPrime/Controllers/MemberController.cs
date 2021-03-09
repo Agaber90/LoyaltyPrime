@@ -40,7 +40,7 @@ namespace LoyaltyPrime.API.Controllers
         ///     POST /member/createMember
         ///     {
         ///        "Name": "test",
-        ///        "Email": "test@hh.com"
+        ///        "Addrss": "Cairo"
         ///     }
         ///
         /// </remarks>

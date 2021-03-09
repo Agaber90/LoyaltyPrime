@@ -117,10 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="EmailValidation" xml:space="preserve">
-    <value>Bitte geben Sie eine gültige Mitglieder-E-Mail-Adresse ein</value>
-  </data>
-  <data name="EmptyEmail" xml:space="preserve">
+  <data name="EmptyAddress" xml:space="preserve">
     <value>Bitte geben Sie die E-Mail-Adresse des Mitglieds ein</value>
   </data>
   <data name="EmptyName" xml:space="preserve">

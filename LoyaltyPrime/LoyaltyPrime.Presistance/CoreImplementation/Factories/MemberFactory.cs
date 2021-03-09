@@ -20,7 +20,7 @@ namespace LoyaltyPrime.Presistance.CoreImplementation.Factories
             return new Member()
             {
                 Name = memberModel.Name,
-                Email = memberModel.Email
+                Address = memberModel.Address
             };
         }
     }

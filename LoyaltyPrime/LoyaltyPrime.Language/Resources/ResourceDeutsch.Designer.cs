@@ -24,9 +24,9 @@ namespace LoyaltyPrime.Language.Resources {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class ResourceDeutsch {
         
-        private static global::System.Resources.ResourceManager resourceMan;
+        public static global::System.Resources.ResourceManager resourceMan;
         
-        private static global::System.Globalization.CultureInfo resourceCulture;
+        public static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         public ResourceDeutsch() {
@@ -61,20 +61,11 @@ namespace LoyaltyPrime.Language.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bitte geben Sie eine gültige Mitglieder-E-Mail-Adresse ein.
-        /// </summary>
-        public static string EmailValidation {
-            get {
-                return ResourceManager.GetString("EmailValidation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Bitte geben Sie die E-Mail-Adresse des Mitglieds ein.
         /// </summary>
-        public static string EmptyEmail {
+        public static string EmptyAddress {
             get {
-                return ResourceManager.GetString("EmptyEmail", resourceCulture);
+                return ResourceManager.GetString("EmptyAddress", resourceCulture);
             }
         }
         

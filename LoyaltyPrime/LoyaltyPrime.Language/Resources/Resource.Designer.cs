@@ -61,20 +61,11 @@ namespace LoyaltyPrime.Language.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please Enter a Valid Member Email.
+        ///   Looks up a localized string similar to Please Enter Member Address.
         /// </summary>
-        public static string EmailValidation {
+        public static string EmptyAddress {
             get {
-                return ResourceManager.GetString("EmailValidation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please Enter Member Email.
-        /// </summary>
-        public static string EmptyEmail {
-            get {
-                return ResourceManager.GetString("EmptyEmail", resourceCulture);
+                return ResourceManager.GetString("EmptyAddress", resourceCulture);
             }
         }
         
