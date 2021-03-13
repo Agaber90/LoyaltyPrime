@@ -96,7 +96,11 @@
         "frameworks": {
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Ground\\LoyaltyPrime.Ground.csproj": {
+                "projectPath": "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.Ground\\LoyaltyPrime.Ground.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

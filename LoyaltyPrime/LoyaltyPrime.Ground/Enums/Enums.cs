@@ -21,4 +21,10 @@ namespace LoyaltyPrime.Ground
         Unauthorized = 401,
         Accepted = 202
     }
+
+    public enum AccountStatus
+    {
+        Active = 1,
+        Inactive = 2
+    }
 }

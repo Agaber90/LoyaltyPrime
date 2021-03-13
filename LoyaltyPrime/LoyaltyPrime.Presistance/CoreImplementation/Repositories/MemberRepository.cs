@@ -2,8 +2,6 @@
 using LoyaltyPrime.Service.Interfaces;
 using LoyaltyPrime.Service.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +22,7 @@ namespace LoyaltyPrime.Presistance.CoreImplementation
         /// </summary>
         /// <param name="memberId"></param>
         /// <returns></returns>
-        public async Task<Member> GetMemberById(int memberId)
+        public async Task<Member> GetMemberById(long memberId)
         {
             var member = await LoyaltyPrimeEntities.Member.FirstOrDefaultAsync(a => a.Id == memberId);
             return member;

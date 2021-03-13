@@ -1535,6 +1535,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "LoyaltyPrime.Ground": "1.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "compile": {

@@ -15,7 +15,7 @@ namespace LoyaltyPrime.API.Controllers
     [ApiController]
     public class MemberController : BaseController
     {
-        private Lazy<IMemberService> _memberService;
+        private readonly Lazy<IMemberService> _memberService;
 
         /// <summary>
         /// Constractor

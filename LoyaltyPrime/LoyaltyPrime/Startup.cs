@@ -1,6 +1,7 @@
 using LoyaltyPrime.Presistance;
 using LoyaltyPrime.Presistance.CoreImplementation;
 using LoyaltyPrime.Presistance.CoreImplementation.Factories;
+using LoyaltyPrime.Presistance.CoreImplementation.Repositories;
 using LoyaltyPrime.Service.Implementation.Services;
 using LoyaltyPrime.Service.Implementation.ServiceValidators;
 using LoyaltyPrime.Service.Implementation.Validators;
@@ -45,6 +46,17 @@ namespace LoyaltyPrime
             services.AddTransient(provider => new Lazy<IMemberValidator>(provider.GetService<IMemberValidator>));
             services.AddTransient<IMemberFactory, MemberFactory>();
             services.AddTransient(provider => new Lazy<IMemberFactory>(provider.GetService<IMemberFactory>));
+            services.AddTransient<IAccountService, AccountService>();
+            services.AddTransient(provider => new Lazy<IAccountService>(provider.GetService<IAccountService>));
+            services.AddTransient<IAccountServiceValidator, AccountServiceValidator>();
+            services.AddTransient(provider => new Lazy<IAccountServiceValidator>(provider.GetService<IAccountServiceValidator>));
+            services.AddTransient<IAccountValidator, AccountValidator>();
+            services.AddTransient(provider => new Lazy<IAccountValidator>(provider.GetService<IAccountValidator>));
+            services.AddTransient<IAccountRepository, AccountRepository>();
+            services.AddTransient(provider => new Lazy<IAccountRepository>(provider.GetService<IAccountRepository>));
+            services.AddTransient<IAccountFactory, AccountFactory>();
+            services.AddTransient(provider => new Lazy<IAccountFactory>(provider.GetService<IAccountFactory>));
+
             services.AddControllers();
             services.AddSwaggerGen();
         }

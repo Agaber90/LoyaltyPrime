@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BalanceInCorrectFormat" xml:space="preserve">
+    <value>Please Add Balance In A Correct Format</value>
+  </data>
+  <data name="EmptyAccountName" xml:space="preserve">
+    <value>Please Enter The Account Name</value>
+  </data>
   <data name="EmptyAddress" xml:space="preserve">
     <value>Please Enter Member Address</value>
   </data>
@@ -125,5 +131,11 @@
   </data>
   <data name="ErrorSaving" xml:space="preserve">
     <value>Error While Saving The Data</value>
+  </data>
+  <data name="ValidateExistingMember" xml:space="preserve">
+    <value>Member Data Doesn't Exist</value>
+  </data>
+  <data name="ValidateStatis" xml:space="preserve">
+    <value>Please Add A Correct Status</value>
   </data>
 </root>

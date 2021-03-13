@@ -1,12 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "GcjsBb0C8ARyG3h1uy455cSQa62WnKWfAi/HJq97No3JUeGNuWY9UQrKQWBIzHXZo3WVQoQ52rHSLgUXCwKrfQ==",
+  "dgSpecHash": "v5/NFQQBAad+TMWLQtvh8+6SygG284NaMKeiWhfDllAkbB7FzmLdVj9emJNSCuwwuur1CfnHiAK/774bKq4vaA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Tasks\\LoyaltyPrime\\LoyaltyPrime\\LoyaltyPrime.DTO\\LoyaltyPrime.DTO.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\agibrahim\\.nuget\\packages\\extensions.configuration\\0.0.4\\extensions.configuration.0.0.4.nupkg.sha512",
+    "C:\\Users\\agibrahim\\.nuget\\packages\\extensions.configuration.resolver\\0.0.4\\extensions.configuration.resolver.0.0.4.nupkg.sha512",
+    "C:\\Users\\agibrahim\\.nuget\\packages\\extensions.configuration.sources.objects\\0.0.2\\extensions.configuration.sources.objects.0.0.2.nupkg.sha512",
+    "C:\\Users\\agibrahim\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.0.0\\microsoft.extensions.configuration.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\agibrahim\\.nuget\\packages\\microsoft.extensions.primitives\\2.0.0\\microsoft.extensions.primitives.2.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\agibrahim\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\agibrahim\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\agibrahim\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
+    "C:\\Users\\agibrahim\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\agibrahim\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\agibrahim\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\agibrahim\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
   ],
   "logs": []
 }

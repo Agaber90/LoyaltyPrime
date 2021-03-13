@@ -1330,6 +1330,7 @@
       },
       "LoyaltyPrime.DTO/1.0.0": {
         "dependencies": {
+          "LoyaltyPrime.Ground": "1.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "runtime": {

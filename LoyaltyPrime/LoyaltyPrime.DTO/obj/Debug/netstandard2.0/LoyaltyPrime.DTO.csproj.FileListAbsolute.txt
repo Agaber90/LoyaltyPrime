@@ -7,3 +7,6 @@ C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\obj\Debug\netstanda
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\obj\Debug\netstandard2.0\LoyaltyPrime.DTO.csproj.CoreCompileInputs.cache
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\obj\Debug\netstandard2.0\LoyaltyPrime.DTO.dll
 C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\obj\Debug\netstandard2.0\LoyaltyPrime.DTO.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\bin\Debug\netstandard2.0\LoyaltyPrime.Ground.dll
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\bin\Debug\netstandard2.0\LoyaltyPrime.Ground.pdb
+C:\Projects\Tasks\LoyaltyPrime\LoyaltyPrime\LoyaltyPrime.DTO\obj\Debug\netstandard2.0\LoyaltyPrime.DTO.csproj.CopyComplete

@@ -23,9 +23,9 @@ namespace LoyaltyPrime.Language.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resource {
-        
+
         public static global::System.Resources.ResourceManager resourceMan;
-        
+
         public static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
@@ -61,6 +61,24 @@ namespace LoyaltyPrime.Language.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please Add Balance In A Correct Format.
+        /// </summary>
+        public static string BalanceInCorrectFormat {
+            get {
+                return ResourceManager.GetString("BalanceInCorrectFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please Enter The Account Name.
+        /// </summary>
+        public static string EmptyAccountName {
+            get {
+                return ResourceManager.GetString("EmptyAccountName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please Enter Member Address.
         /// </summary>
         public static string EmptyAddress {
@@ -84,6 +102,24 @@ namespace LoyaltyPrime.Language.Resources {
         public static string ErrorSaving {
             get {
                 return ResourceManager.GetString("ErrorSaving", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Member Data Doesn&apos;t Exist.
+        /// </summary>
+        public static string ValidateExistingMember {
+            get {
+                return ResourceManager.GetString("ValidateExistingMember", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please Add A Correct Status.
+        /// </summary>
+        public static string ValidateStatis {
+            get {
+                return ResourceManager.GetString("ValidateStatis", resourceCulture);
             }
         }
     }

@@ -4,6 +4,30 @@
         <name>LoyaltyPrime.API</name>
     </assembly>
     <members>
+        <member name="T:LoyaltyPrime.API.Controllers.AccountController">
+            <summary>
+            All Account Operation
+            </summary>
+        </member>
+        <member name="F:LoyaltyPrime.API.Controllers.AccountController._accountService">
+            <summary>
+            Account Services
+            </summary>
+        </member>
+        <member name="M:LoyaltyPrime.API.Controllers.AccountController.#ctor(System.Lazy{LoyaltyPrime.Service.Interfaces.Services.IAccountService})">
+            <summary>
+            Constractor
+            </summary>
+        </member>
+        <member name="M:LoyaltyPrime.API.Controllers.AccountController.AddAccount(LoyaltyPrime.DTO.Models.DTOAccount)">
+             <summary>
+             Create a new account for existing member
+             </summary>
+             <param name="accountMember"></param>
+             <returns>A newly created Account</returns>
+            <response code="200">Returns the newly created member</response>
+            <response code="400">If the member is null</response> 
+        </member>
         <member name="T:LoyaltyPrime.API.Controllers.MemberController">
             <summary>
             All Members Operations

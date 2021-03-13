@@ -6,7 +6,7 @@ namespace LoyaltyPrime.Service.Interfaces.Repositories
 {
     public interface IMemberRepository : IBaseRepository<Member>
     {
-        Task<Member> GetMemberById(int memberId);
+        Task<Member> GetMemberById(long memberId);
         Task<IQueryable<Member>> GetMembers();
     }
 }
