@@ -27,4 +27,9 @@ namespace LoyaltyPrime.Ground
         Active = 1,
         Inactive = 2
     }
+
+    public enum FileExtension
+    {
+        JSON = 1
+    }
 }

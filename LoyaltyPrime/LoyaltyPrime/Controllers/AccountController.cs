@@ -49,5 +49,43 @@ namespace LoyaltyPrime.API.Controllers
             if (!accountResult.IsValid) return GetErrorResult(accountResult);
             return Ok(accountResult);
         }
+
+        /// <summary>
+        /// Member can collect points if account is valid
+        /// </summary>
+        /// <param name="memberID"></param>
+        /// <returns>Sub Total points</returns>
+        ///<response code="200">Returns the newly created member</response>
+        ///<response code="400">If the member is null</response> 
+        [HttpGet]
+        [Route("account/collectpoints/{memberID}", Name = "CollectPoints")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DTOAccount))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> CollectPoints(long memberID)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var accountResult = await AccountService.CollectPointsByActiveAccount(memberID);
+            if (!accountResult.IsValid) return GetErrorResult(accountResult);
+            return Ok(accountResult);
+        }
+
+        /// <summary>
+        /// Redeem Points
+        /// </summary>
+        /// <param name="dTORedeemPoint"></param>
+        /// <returns>Redeemed Message</returns>
+        ///<response code="200">Returns the newly created member</response>
+        ///<response code="400">If the member is null</response> 
+        [HttpPost]
+        [Route("account/RedeemPoints", Name = "RedeemPoints")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DTORedeemPoint))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> RedeemPoints(DTORedeemPoint dTORedeemPoint)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var reedemPoints = await AccountService.RedeemPoints(dTORedeemPoint);
+            if (!reedemPoints.IsValid) return GetErrorResult(reedemPoints);
+            return Ok(reedemPoints);
+        }
     }
 }

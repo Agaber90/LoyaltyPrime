@@ -83,5 +83,24 @@ namespace LoyaltyPrime.Service.Implementation.Validators
             }
             return new ValidatorResult();
         }
+
+        /// <summary>
+        /// Validate Collected Account
+        /// </summary>
+        /// <param name="isActiveAccount"></param>
+        /// <returns></returns>
+        public async Task<ValidatorResult> ValidateActiveAccount(bool isActiveAccount)
+        {
+            if (!isActiveAccount)
+            {
+                return new ValidatorResult()
+                {
+                    IsValid = false,
+                    Message = "Account isn't active"
+                };
+            }
+            return new ValidatorResult();
+        }
+
     }
 }

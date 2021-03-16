@@ -132,6 +132,9 @@
   <data name="ErrorSaving" xml:space="preserve">
     <value>Error While Saving The Data</value>
   </data>
+  <data name="RedeemedSuccessMessage" xml:space="preserve">
+    <value>Points are redeemed successfully</value>
+  </data>
   <data name="ValidateExistingMember" xml:space="preserve">
     <value>Member Data Doesn't Exist</value>
   </data>

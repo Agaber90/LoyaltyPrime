@@ -28,6 +28,15 @@
             <response code="200">Returns the newly created member</response>
             <response code="400">If the member is null</response> 
         </member>
+        <member name="M:LoyaltyPrime.API.Controllers.AccountController.CollectPoints(System.Int64)">
+             <summary>
+             Member can collect points if account is valid
+             </summary>
+             <param name="memberID"></param>
+             <returns>Sub Total points</returns>
+            <response code="200">Returns the newly created member</response>
+            <response code="400">If the member is null</response> 
+        </member>
         <member name="T:LoyaltyPrime.API.Controllers.MemberController">
             <summary>
             All Members Operations

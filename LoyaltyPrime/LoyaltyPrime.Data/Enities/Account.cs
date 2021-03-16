@@ -19,5 +19,7 @@ namespace LoyaltyPrime.Data.Enities
         public decimal Balance { get; set; }
         public DateTime Createdate { get; set; }
         public DateTime Updatedate { get; set; }
+
+        public bool IsRedeemedPoint { get; set; } = false;
     }
 }

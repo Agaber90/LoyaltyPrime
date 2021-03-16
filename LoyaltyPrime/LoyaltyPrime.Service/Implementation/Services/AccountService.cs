@@ -87,5 +87,76 @@ namespace LoyaltyPrime.Service.Implementation.Services
             };
         }
 
+
+        /// <summary>
+        /// Member can collect points
+        /// </summary>
+        /// <param name="memberId"></param>
+        /// <returns></returns>
+        public async Task<ServiceResultDetail<DTOAccount>> CollectPointsByActiveAccount(long memberId)
+        {
+            var ActiveAccount = await AccountRepository.GetActiveAccounts(memberId);
+            var validateActiveAccount = await AccountServiceValidator.AccountIsValidValidator(ActiveAccount.Any());
+            if (!validateActiveAccount.IsValid)
+            {
+                return new ServiceResultDetail<DTOAccount>()
+                {
+                    IsValid = false,
+                    Messages = new List<string>() { validateActiveAccount.Message },
+
+                };
+            }
+
+            var sum = ActiveAccount.Sum(a => a.Balance);
+            if (sum > 0)
+            {
+                return new ServiceResultDetail<DTOAccount>()
+                {
+                    SubTotalCount = (long)sum
+                };
+            }
+
+
+            return new ServiceResultDetail<DTOAccount>();
+
+
+        }
+
+        public async Task<ServiceResultDetail<DTORedeemPoint>> RedeemPoints(DTORedeemPoint dTORedeemPoint)
+        {
+            var ActiveAccount = await AccountRepository.GetActiveAccounts(dTORedeemPoint.MemberId);
+            var validateActiveAccount = await AccountServiceValidator.AccountIsValidValidator(ActiveAccount.Any());
+            if (!validateActiveAccount.IsValid)
+            {
+                return new ServiceResultDetail<DTORedeemPoint>()
+                {
+                    IsValid = false,
+                    Messages = new List<string>() { validateActiveAccount.Message },
+
+                };
+            }
+            var sum = ActiveAccount.Sum(a => a.Balance);
+            if (dTORedeemPoint.Point <= dTORedeemPoint.Point)
+            {
+                var newPoints = sum - dTORedeemPoint.Point;
+                var redeemedPoint = new DTORedeemPoint
+                {
+                    MemberId = dTORedeemPoint.MemberId,
+                    Point = newPoints
+                };
+                bool isRedeemed = await AccountRepository.UpdateRedeemeddAccounts(redeemedPoint);
+                if (isRedeemed)
+                {
+                    return new ServiceResultDetail<DTORedeemPoint>()
+                    {
+                        Messages = new List<string>() { Resource.RedeemedSuccessMessage },
+                    };
+                }
+
+            }
+            return new ServiceResultDetail<DTORedeemPoint>();
+
+        }
+
     }
 }

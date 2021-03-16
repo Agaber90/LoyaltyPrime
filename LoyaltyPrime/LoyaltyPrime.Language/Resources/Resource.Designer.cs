@@ -23,9 +23,9 @@ namespace LoyaltyPrime.Language.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resource {
-
+        
         public static global::System.Resources.ResourceManager resourceMan;
-
+        
         public static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
@@ -102,6 +102,15 @@ namespace LoyaltyPrime.Language.Resources {
         public static string ErrorSaving {
             get {
                 return ResourceManager.GetString("ErrorSaving", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Points are redeemed successfully.
+        /// </summary>
+        public static string RedeemedSuccessMessage {
+            get {
+                return ResourceManager.GetString("RedeemedSuccessMessage", resourceCulture);
             }
         }
         

@@ -10,5 +10,7 @@ namespace LoyaltyPrime.Service.Interfaces.Services
     public interface IAccountService
     {
         Task<ServiceResultDetail<DTOAccount>> AddAccount(DTOAccount accountModel);
+        Task<ServiceResultDetail<DTOAccount>> CollectPointsByActiveAccount(long memberId);
+        Task<ServiceResultDetail<DTORedeemPoint>> RedeemPoints(DTORedeemPoint dTORedeemPoint);
     }
 }

@@ -12,5 +12,7 @@ namespace LoyaltyPrime.Service.Interfaces.ServiceValidators
         Task<ValidatorResult> AddAccountValidator(DTOAccount dTOAccount);
 
         Task<ValidatorResult> MemberHasAccountValidator(bool isExist);
+
+        Task<ValidatorResult> AccountIsValidValidator(bool isActiveAccount);
     }
 }

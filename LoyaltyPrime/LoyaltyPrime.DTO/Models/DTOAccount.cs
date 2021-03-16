@@ -16,4 +16,10 @@ namespace LoyaltyPrime.DTO.Models
 
         public long Balance { get; set; }
     }
+
+    public class DTORedeemPoint
+    {
+        public long MemberId { get; set; }
+        public decimal Point { get; set; }
+    }
 }

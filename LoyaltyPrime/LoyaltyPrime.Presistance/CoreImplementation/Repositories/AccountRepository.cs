@@ -1,4 +1,6 @@
 ﻿using LoyaltyPrime.Data.Enities;
+using LoyaltyPrime.DTO.Models;
+using LoyaltyPrime.Ground;
 using LoyaltyPrime.Service.Interfaces;
 using LoyaltyPrime.Service.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -37,7 +39,7 @@ namespace LoyaltyPrime.Presistance.CoreImplementation.Repositories
         /// <returns></returns>
         public async Task<IQueryable<Account>> GetAccountByMemberId(long memberID)
         {
-            var accountByMembers = LoyaltyPrimeEntities.Account.Where(a => a.Member.Id == memberID).AsQueryable();
+            var accountByMembers = LoyaltyPrimeEntities.Account.Where(a => a.Member.Id == memberID);
             return accountByMembers;
         }
 
@@ -47,8 +49,35 @@ namespace LoyaltyPrime.Presistance.CoreImplementation.Repositories
         /// <returns></returns>
         public async Task<IQueryable<Account>> GetAccounts()
         {
-            var accounts = LoyaltyPrimeEntities.Account.AsQueryable();
+            var accounts = LoyaltyPrimeEntities.Account;
             return accounts;
+        }
+
+        /// <summary>
+        /// Get Active Accounts
+        /// </summary>
+        /// <param name="memberID"></param>
+        /// <returns></returns>
+        public async Task<IQueryable<Account>> GetActiveAccounts(long memberID)
+        {
+            var accountsByMember = LoyaltyPrimeEntities.Account.Where(a => a.Member.Id == memberID
+            && a.Status == Convert.ToBoolean((int)AccountStatus.Active));
+            return accountsByMember;
+        }
+
+        public async Task<bool> UpdateRedeemeddAccounts(DTORedeemPoint dTORedeemPoint)
+        {
+            var activeAccounts = await GetActiveAccounts(dTORedeemPoint.MemberId);
+            if (activeAccounts.Any())
+            {
+                foreach (var item in activeAccounts)
+                {
+                    item.IsRedeemedPoint = true;
+                    item.Balance = dTORedeemPoint.Point;
+                }
+                return await LoyaltyPrimeEntities.SaveChangesAsync() > 0;
+            }
+            return false;
         }
     }
 }

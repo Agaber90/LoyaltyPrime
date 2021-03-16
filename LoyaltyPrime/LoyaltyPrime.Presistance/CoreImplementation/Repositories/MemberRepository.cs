@@ -34,7 +34,7 @@ namespace LoyaltyPrime.Presistance.CoreImplementation
         /// <returns></returns>
         public async Task<IQueryable<Member>> GetMembers()
         {
-            var members = LoyaltyPrimeEntities.Member.AsQueryable();
+            var members = LoyaltyPrimeEntities.Member;
             return members;
 
         }

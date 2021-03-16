@@ -15,5 +15,7 @@ namespace LoyaltyPrime.Service.Interfaces.Validators
         Task<ValidatorResult> ValidateAccountBalance(decimal balance);
 
         Task<ValidatorResult> ValidateExistingMember(bool isMEmberExist);
+
+        Task<ValidatorResult> ValidateActiveAccount(bool isActiveAccount);
     }
 }

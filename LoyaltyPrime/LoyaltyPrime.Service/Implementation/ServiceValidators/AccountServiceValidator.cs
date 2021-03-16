@@ -58,5 +58,18 @@ namespace LoyaltyPrime.Service.Implementation.ServiceValidators
             if (taskResult != null) return taskResult;
             return new ValidatorResult();
         }
+
+        public async Task<ValidatorResult> AccountIsValidValidator(bool isActiveAccount)
+        {
+            var accountTask = new List<Task<ValidatorResult>>()
+            {
+                    AccountValidator.ValidateActiveAccount(isActiveAccount),
+            };
+
+            await Task.WhenAll(accountTask);
+            var taskResult = accountTask.Select(a => a.Result).FirstOrDefault(a => !a.IsValid);
+            if (taskResult != null) return taskResult;
+            return new ValidatorResult();
+        }
     }
 }
