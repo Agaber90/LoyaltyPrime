@@ -37,6 +37,15 @@
             <response code="200">Returns the newly created member</response>
             <response code="400">If the member is null</response> 
         </member>
+        <member name="M:LoyaltyPrime.API.Controllers.AccountController.RedeemPoints(LoyaltyPrime.DTO.Models.DTORedeemPoint)">
+             <summary>
+             Redeem Points
+             </summary>
+             <param name="dTORedeemPoint"></param>
+             <returns>Redeemed Message</returns>
+            <response code="200">Returns the newly created member</response>
+            <response code="400">If the member is null</response> 
+        </member>
         <member name="T:LoyaltyPrime.API.Controllers.MemberController">
             <summary>
             All Members Operations

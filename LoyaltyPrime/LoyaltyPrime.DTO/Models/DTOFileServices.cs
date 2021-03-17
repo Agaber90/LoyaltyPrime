@@ -7,8 +7,8 @@ namespace LoyaltyPrime.DTO.Models
     public class DTOAccountData
     {
         public string Name { get; set; }
-        public int Balance { get; set; }
-        public string Status { get; set; }
+        public decimal Balance { get; set; }
+        public bool Status { get; set; }
     }
 
     public class DTOMemberData
@@ -18,3 +18,11 @@ namespace LoyaltyPrime.DTO.Models
         public List<DTOAccountData> Accounts { get; set; }
 
     }
+
+    public class DTODownloadSearchCreateria
+    {
+        public bool Status { get; set; }
+
+        public decimal Points { get; set; }
+    }
+}

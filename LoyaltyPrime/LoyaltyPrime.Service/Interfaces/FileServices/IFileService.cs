@@ -10,7 +10,7 @@ namespace LoyaltyPrime.Service.Interfaces.FileServices
     public interface IFileService
     {
         Task<ServiceResultDetail<DTOMemberData>> Import(DTOMemberData memberDataModel);
-        Task<ServiceResultDetail<DTOMemberData>> Export(DTOMemberData memberDataModel);
+        Task<ValidatorResult> Export(DTODownloadSearchCreateria searchModel);
 
 
     }

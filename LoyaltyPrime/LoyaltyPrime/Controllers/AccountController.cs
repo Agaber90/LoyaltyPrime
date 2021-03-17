@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace LoyaltyPrime.API.Controllers
@@ -21,15 +22,18 @@ namespace LoyaltyPrime.API.Controllers
         /// Account Services
         /// </summary>
         private readonly Lazy<IAccountService> _accountService;
-
+        private readonly Lazy<IMediaService> _mediaService;
         /// <summary>
         /// Constractor
         /// </summary>
-        public AccountController(Lazy<IAccountService> accountService)
+        public AccountController(Lazy<IAccountService> accountService
+                , Lazy<IMediaService> mediaService)
         {
             _accountService = accountService;
+            _mediaService = mediaService;
         }
         private IAccountService AccountService => _accountService.Value;
+        private IMediaService MediaService => _mediaService.Value;
 
         /// <summary>
         /// Create a new account for existing member
@@ -59,7 +63,7 @@ namespace LoyaltyPrime.API.Controllers
         ///<response code="400">If the member is null</response> 
         [HttpGet]
         [Route("account/collectpoints/{memberID}", Name = "CollectPoints")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DTOAccount))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(long))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> CollectPoints(long memberID)
         {
@@ -86,6 +90,26 @@ namespace LoyaltyPrime.API.Controllers
             var reedemPoints = await AccountService.RedeemPoints(dTORedeemPoint);
             if (!reedemPoints.IsValid) return GetErrorResult(reedemPoints);
             return Ok(reedemPoints);
+        }
+
+        /// <summary>
+        /// Export Member
+        /// </summary>
+        /// <param name="searchModel"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("account/exportMember/", Name = "ExportMember")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DTODownloadSearchCreateria))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> ExportMember(DTODownloadSearchCreateria searchModel)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var exportLstResult = await MediaService.ExportMember(searchModel);
+            if (exportLstResult.IsValid) GetErrorResult(exportLstResult);
+            Encoding u8 = Encoding.UTF8;
+
+            var result = exportLstResult.Model.SelectMany(x => u8.GetBytes(x)).ToArray();
+            return File(result, "application/octet-stream", "member.jsom");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace LoyaltyPrime.Data.Enities
         [Key]
         public long Id { get; set; }
         public string Name { get; set; }
-        public bool Status { get; set; }
+        public bool? Status { get; set; }
 
         [ForeignKey("Member")]
         public long MemberId { get; set; }

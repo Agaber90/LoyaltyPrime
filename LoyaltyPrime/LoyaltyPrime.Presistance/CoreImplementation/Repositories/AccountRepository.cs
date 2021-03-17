@@ -61,7 +61,7 @@ namespace LoyaltyPrime.Presistance.CoreImplementation.Repositories
         public async Task<IQueryable<Account>> GetActiveAccounts(long memberID)
         {
             var accountsByMember = LoyaltyPrimeEntities.Account.Where(a => a.Member.Id == memberID
-            && a.Status == Convert.ToBoolean((int)AccountStatus.Active));
+            && a.Status != null && a.Status == Convert.ToBoolean((int)AccountStatus.Active));
             return accountsByMember;
         }
 
@@ -78,6 +78,24 @@ namespace LoyaltyPrime.Presistance.CoreImplementation.Repositories
                 return await LoyaltyPrimeEntities.SaveChangesAsync() > 0;
             }
             return false;
+        }
+
+        public async Task<IQueryable<DTOMemberData>> DownloadMember(DTODownloadSearchCreateria searchModel)
+        {
+            var data = LoyaltyPrimeEntities.Member.Select(a => new DTOMemberData
+            {
+                Name = a.Name,
+                Address = a.Address,
+                Accounts = a.Accounts.Where(c => c.Status == searchModel.Status
+                && c.Balance == searchModel.Points).Select(d => new DTOAccountData
+                {
+                    Name = d.Name,
+                    Balance = d.Balance,
+                    Status = d.Status.Value
+                }).ToList()
+            });
+
+            return data;
         }
     }
 }

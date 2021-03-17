@@ -9,11 +9,9 @@ namespace LoyaltyPrime.Service.Interfaces.Repositories
     {
         Task<Account> GetAccountById(long accountID);
         Task<IQueryable<Account>> GetAccountByMemberId(long memberID);
-
         Task<IQueryable<Account>> GetAccounts();
-
         Task<IQueryable<Account>> GetActiveAccounts(long memberID);
-
-        Task<bool> UpdateRedeemeddAccounts(DTORedeemPoint dTORedeemPoint)
+        Task<bool> UpdateRedeemeddAccounts(DTORedeemPoint dTORedeemPoint);
+        Task<IQueryable<DTOMemberData>> DownloadMember(DTODownloadSearchCreateria searchModel);
     }
 }
