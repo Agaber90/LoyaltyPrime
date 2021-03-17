@@ -3,9 +3,8 @@ using LoyaltyPrime.Service.Interfaces.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading.Tasks;
 
 namespace LoyaltyPrime.API.Controllers
@@ -103,13 +102,20 @@ namespace LoyaltyPrime.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> ExportMember(DTODownloadSearchCreateria searchModel)
         {
+            BinaryFormatter formatter = new BinaryFormatter();
+            MemoryStream memStream = new MemoryStream();
+
             if (!ModelState.IsValid) return BadRequest(ModelState);
             var exportLstResult = await MediaService.ExportMember(searchModel);
             if (exportLstResult.IsValid) GetErrorResult(exportLstResult);
-            Encoding u8 = Encoding.UTF8;
 
-            var result = exportLstResult.Model.SelectMany(x => u8.GetBytes(x)).ToArray();
-            return File(result, "application/octet-stream", "member.jsom");
+            var lstData = exportLstResult.Model;
+            formatter.Serialize(memStream, lstData);
+
+            byte[] listBytes = memStream.ToArray();
+
+
+            return File(listBytes, "application/octet-stream", "member.jsom");
         }
     }
 }
