@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[0.0.4, )"
             },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

@@ -1644,7 +1644,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Extensions.Configuration": "0.0.4"
+          "Extensions.Configuration": "0.0.4",
+          "Microsoft.AspNetCore.Http": "2.2.2"
         },
         "compile": {
           "bin/placeholder/LoyaltyPrime.Ground.dll": {}

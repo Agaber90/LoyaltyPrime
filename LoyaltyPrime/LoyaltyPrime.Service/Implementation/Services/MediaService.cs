@@ -3,11 +3,13 @@ using LoyaltyPrime.Service.Interfaces.Repositories;
 using LoyaltyPrime.Service.Interfaces.Services;
 using LoyaltyPrime.Service.Interfaces.ServiceValidators;
 using LoyaltyPrime.Service.Model;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace LoyaltyPrime.Service.Implementation.Services
 {
@@ -44,15 +46,31 @@ namespace LoyaltyPrime.Service.Implementation.Services
             {
                 return new ServiceResultList<DTOMemberData>
                 {
-                    Model=result.ToList()
+                    Model = result.ToList()
                 };
             }
             return new ServiceResultList<DTOMemberData>();
         }
 
-        public Task<ServiceResultList<DTOMemberData>> Import(DTOImport importModel)
+        public async Task<ServiceResultList<DTOMemberData>> Import(DTOImport importModel)
         {
-            
+            var importValidator = await FileServiceValidator.ImportItemValidator(importModel);
+            if (!importValidator.IsValid)
+            {
+                return new ServiceResultList<DTOMemberData>()
+                {
+                    IsValid = false,
+                    Messages = new List<string>() { importValidator.Message }
+                };
+            }
+            using (TransactionScope tranScope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
+            {
+                //var file=importModel.File.OpenReadStream()
+            }
+
+
+            return new ServiceResultList<DTOMemberData>();
         }
+
     }
 }

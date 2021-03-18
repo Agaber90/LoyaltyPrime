@@ -5,6 +5,7 @@ using LoyaltyPrime.Service.Interfaces.FileServices;
 using LoyaltyPrime.Service.Model;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -36,9 +37,17 @@ namespace LoyaltyPrime.Service.Implementation.Validators
             return new ValidatorResult();
         }
 
-        public Task<ServiceResultDetail<DTOMemberData>> Import(DTOImport importModel)
+        public async Task<ValidatorResult> Import(DTOImport importModel)
         {
-            throw new NotImplementedException();
+            var tasks = new List<Task<ValidatorResult>>()
+            {
+                IsFileContentTypeAllowed(importModel.File.GetFileExtension())
+            };
+            await Task.WhenAll(tasks);
+            var result = tasks.Select(c => c.Result).FirstOrDefault(a => !a.IsValid);
+            if (result != null)
+                return result;
+            return new ValidatorResult();
         }
 
         private async Task<ValidatorResult> IsFileContentTypeAllowed(string fileType)

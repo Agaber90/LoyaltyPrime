@@ -8,10 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LoyaltyPrime.Language.Resources {
+namespace LoyaltyPrime.Language.Resources
+{
     using System;
-    
-    
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,121 +23,147 @@ namespace LoyaltyPrime.Language.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resource {
-        
-        private static global::System.Resources.ResourceManager resourceMan;
-        
-        private static global::System.Globalization.CultureInfo resourceCulture;
-        
+    public class Resource
+    {
+
+        public static global::System.Resources.ResourceManager resourceMan;
+
+        public static global::System.Globalization.CultureInfo resourceCulture;
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resource() {
+        public Resource()
+        {
         }
-        
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if (object.ReferenceEquals(resourceMan, null)) {
+        public static global::System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.ReferenceEquals(resourceMan, null))
+                {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LoyaltyPrime.Language.Resources.Resource", typeof(Resource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
-            get {
+        public static global::System.Globalization.CultureInfo Culture
+        {
+            get
+            {
                 return resourceCulture;
             }
-            set {
+            set
+            {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Please Add Balance In A Correct Format.
         /// </summary>
-        internal static string BalanceInCorrectFormat {
-            get {
+        public static string BalanceInCorrectFormat
+        {
+            get
+            {
                 return ResourceManager.GetString("BalanceInCorrectFormat", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Please Enter The Account Name.
         /// </summary>
-        internal static string EmptyAccountName {
-            get {
+        public static string EmptyAccountName
+        {
+            get
+            {
                 return ResourceManager.GetString("EmptyAccountName", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Please Enter Member Address.
         /// </summary>
-        internal static string EmptyAddress {
-            get {
+        public static string EmptyAddress
+        {
+            get
+            {
                 return ResourceManager.GetString("EmptyAddress", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Please Enter The Member Name.
         /// </summary>
-        internal static string EmptyName {
-            get {
+        public static string EmptyName
+        {
+            get
+            {
                 return ResourceManager.GetString("EmptyName", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Error While Saving The Data.
         /// </summary>
-        internal static string ErrorSaving {
-            get {
+        public static string ErrorSaving
+        {
+            get
+            {
                 return ResourceManager.GetString("ErrorSaving", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to we just accept only json files..
         /// </summary>
-        internal static string NotJsonFileError {
-            get {
+        public static string NotJsonFileError
+        {
+            get
+            {
                 return ResourceManager.GetString("NotJsonFileError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Points are redeemed successfully.
         /// </summary>
-        internal static string RedeemedSuccessMessage {
-            get {
+        public static string RedeemedSuccessMessage
+        {
+            get
+            {
                 return ResourceManager.GetString("RedeemedSuccessMessage", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Member Data Doesn&apos;t Exist.
         /// </summary>
-        internal static string ValidateExistingMember {
-            get {
+        public static string ValidateExistingMember
+        {
+            get
+            {
                 return ResourceManager.GetString("ValidateExistingMember", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Please Add A Correct Status.
         /// </summary>
-        internal static string ValidateStatis {
-            get {
+        public static string ValidateStatis
+        {
+            get
+            {
                 return ResourceManager.GetString("ValidateStatis", resourceCulture);
             }
         }
