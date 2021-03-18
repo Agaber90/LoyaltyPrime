@@ -3,7 +3,6 @@ using LoyaltyPrime.Service.Interfaces.Repositories;
 using LoyaltyPrime.Service.Interfaces.Services;
 using LoyaltyPrime.Service.Interfaces.ServiceValidators;
 using LoyaltyPrime.Service.Model;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
