@@ -22,21 +22,21 @@ namespace LoyaltyPrime.Language.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Resource {
+    internal class Resource {
         
-        public static global::System.Resources.ResourceManager resourceMan;
+        private static global::System.Resources.ResourceManager resourceMan;
         
-        public static global::System.Globalization.CultureInfo resourceCulture;
+        private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        public Resource() {
+        internal Resource() {
         }
         
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
+        internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LoyaltyPrime.Language.Resources.Resource", typeof(Resource).Assembly);
@@ -51,7 +51,7 @@ namespace LoyaltyPrime.Language.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace LoyaltyPrime.Language.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Please Add Balance In A Correct Format.
         /// </summary>
-        public static string BalanceInCorrectFormat {
+        internal static string BalanceInCorrectFormat {
             get {
                 return ResourceManager.GetString("BalanceInCorrectFormat", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace LoyaltyPrime.Language.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Please Enter The Account Name.
         /// </summary>
-        public static string EmptyAccountName {
+        internal static string EmptyAccountName {
             get {
                 return ResourceManager.GetString("EmptyAccountName", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace LoyaltyPrime.Language.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Please Enter Member Address.
         /// </summary>
-        public static string EmptyAddress {
+        internal static string EmptyAddress {
             get {
                 return ResourceManager.GetString("EmptyAddress", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace LoyaltyPrime.Language.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Please Enter The Member Name.
         /// </summary>
-        public static string EmptyName {
+        internal static string EmptyName {
             get {
                 return ResourceManager.GetString("EmptyName", resourceCulture);
             }
@@ -99,16 +99,25 @@ namespace LoyaltyPrime.Language.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Error While Saving The Data.
         /// </summary>
-        public static string ErrorSaving {
+        internal static string ErrorSaving {
             get {
                 return ResourceManager.GetString("ErrorSaving", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to we just accept only json files..
+        /// </summary>
+        internal static string NotJsonFileError {
+            get {
+                return ResourceManager.GetString("NotJsonFileError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Points are redeemed successfully.
         /// </summary>
-        public static string RedeemedSuccessMessage {
+        internal static string RedeemedSuccessMessage {
             get {
                 return ResourceManager.GetString("RedeemedSuccessMessage", resourceCulture);
             }
@@ -117,7 +126,7 @@ namespace LoyaltyPrime.Language.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Member Data Doesn&apos;t Exist.
         /// </summary>
-        public static string ValidateExistingMember {
+        internal static string ValidateExistingMember {
             get {
                 return ResourceManager.GetString("ValidateExistingMember", resourceCulture);
             }
@@ -126,7 +135,7 @@ namespace LoyaltyPrime.Language.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Please Add A Correct Status.
         /// </summary>
-        public static string ValidateStatis {
+        internal static string ValidateStatis {
             get {
                 return ResourceManager.GetString("ValidateStatis", resourceCulture);
             }

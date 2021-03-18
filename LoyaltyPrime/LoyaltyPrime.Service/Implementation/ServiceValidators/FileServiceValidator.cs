@@ -32,5 +32,10 @@ namespace LoyaltyPrime.Service.Implementation.ServiceValidators
             if (taskResult != null) return taskResult;
             return new ValidatorResult();
         }
+
+        public async Task<ValidatorResult> ImportItemValidator(DTOImport importModel)
+        {
+
+        }
     }
 }

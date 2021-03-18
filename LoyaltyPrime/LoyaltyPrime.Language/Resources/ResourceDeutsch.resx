@@ -132,6 +132,9 @@
   <data name="ErrorSaving" xml:space="preserve">
     <value>Fehler beim Speichern der Daten</value>
   </data>
+  <data name="NotJsonFileError" xml:space="preserve">
+    <value>Wir akzeptieren nur JSON-Dateien.</value>
+  </data>
   <data name="RedeemedSuccessMessage" xml:space="preserve">
     <value>Punkte werden erfolgreich eingelöst</value>
   </data>

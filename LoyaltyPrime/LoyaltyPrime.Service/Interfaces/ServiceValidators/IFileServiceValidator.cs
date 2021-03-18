@@ -10,6 +10,9 @@ namespace LoyaltyPrime.Service.Interfaces.ServiceValidators
     public interface IFileServiceValidator
     {
         Task<ValidatorResult> ExportItemValidator(DTODownloadSearchCreateria searchModel);
-       
+
+        Task<ValidatorResult> ImportItemValidator(DTOImport importModel);
+
+
     }
 }

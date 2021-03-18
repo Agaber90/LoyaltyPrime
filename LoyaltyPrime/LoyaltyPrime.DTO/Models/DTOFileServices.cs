@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -24,5 +25,10 @@ namespace LoyaltyPrime.DTO.Models
         public bool Status { get; set; }
 
         public decimal Points { get; set; }
+    }
+
+    public class DTOImport
+    {
+        public IFormFile File { get; set; }
     }
 }

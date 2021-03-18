@@ -36,9 +36,22 @@ namespace LoyaltyPrime.Service.Implementation.Validators
             return new ValidatorResult();
         }
 
-        public Task<ServiceResultDetail<DTOMemberData>> Import(DTOMemberData memberDataModel)
+        public Task<ServiceResultDetail<DTOMemberData>> Import(DTOImport importModel)
         {
             throw new NotImplementedException();
+        }
+
+        private async Task<ValidatorResult> IsFileContentTypeAllowed(string fileType)
+        {
+            if (fileType.ToLower() != ".json")
+            {
+                return new ValidatorResult()
+                {
+                    IsValid = false,
+                    Message = Resource.NotJsonFileError
+                };
+            }
+            return new ValidatorResult();
         }
     }
 }

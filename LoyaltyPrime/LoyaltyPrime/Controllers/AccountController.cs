@@ -91,11 +91,14 @@ namespace LoyaltyPrime.API.Controllers
             return Ok(reedemPoints);
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> ImportMember()
-        //{
 
-        //}
+        [HttpPost]
+        [Route("account/importfromFile/", Name = "Import")]
+        public async Task<IActionResult> Import([FromForm] DTOImport importModel)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            return Ok();
+        }
 
         /// <summary>
         /// Export Member
@@ -103,16 +106,16 @@ namespace LoyaltyPrime.API.Controllers
         /// <param name="searchModel"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("account/exportMember/", Name = "ExportMember")]
+        [Route("account/exporttofile/", Name = "Export")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DTODownloadSearchCreateria))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> ExportMember(DTODownloadSearchCreateria searchModel)
+        public async Task<IActionResult> Export(DTODownloadSearchCreateria searchModel)
         {
             BinaryFormatter formatter = new BinaryFormatter();
             MemoryStream memStream = new MemoryStream();
 
             if (!ModelState.IsValid) return BadRequest(ModelState);
-            var exportLstResult = await MediaService.ExportMember(searchModel);
+            var exportLstResult = await MediaService.Export(searchModel);
             if (exportLstResult.IsValid) GetErrorResult(exportLstResult);
 
             var lstData = exportLstResult.Model;

@@ -6,6 +6,9 @@ namespace LoyaltyPrime.Service.Interfaces.Services
 {
     public interface IMediaService
     {
-        Task<ServiceResultList<DTOMemberData>> ExportMember(DTODownloadSearchCreateria searchModel);
+        Task<ServiceResultList<DTOMemberData>> Export(DTODownloadSearchCreateria searchModel);
+
+        Task<ServiceResultList<DTOMemberData>> Import(DTOImport importModel);
+
     }
 }

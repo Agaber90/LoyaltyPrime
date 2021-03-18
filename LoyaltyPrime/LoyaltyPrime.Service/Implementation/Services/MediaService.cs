@@ -26,7 +26,7 @@ namespace LoyaltyPrime.Service.Implementation.Services
         private IFileServiceValidator FileServiceValidator => _fileServiceValidator.Value;
         private IAccountRepository AccountRepository => _accountRepository.Value;
 
-        public async Task<ServiceResultList<DTOMemberData>> ExportMember
+        public async Task<ServiceResultList<DTOMemberData>> Export
             (DTODownloadSearchCreateria searchModel)
         {
             var exportValidator = await FileServiceValidator.ExportItemValidator(searchModel);
@@ -50,6 +50,9 @@ namespace LoyaltyPrime.Service.Implementation.Services
             return new ServiceResultList<DTOMemberData>();
         }
 
-        //public async Task<ServiceResultList<DTOMemberData>> ImportMember()
+        public Task<ServiceResultList<DTOMemberData>> Import(DTOImport importModel)
+        {
+            
+        }
     }
 }
