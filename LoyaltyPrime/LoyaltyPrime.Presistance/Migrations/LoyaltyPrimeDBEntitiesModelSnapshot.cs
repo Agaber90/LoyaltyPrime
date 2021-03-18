@@ -26,19 +26,22 @@ namespace LoyaltyPrime.Presistance.Migrations
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<long>("Balance")
-                        .HasColumnType("bigint");
+                    b.Property<decimal>("Balance")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("Createdate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long?>("MemberId")
+                    b.Property<bool>("IsRedeemedPoint")
+                        .HasColumnType("bit");
+
+                    b.Property<long>("MemberId")
                         .HasColumnType("bigint");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Status")
+                    b.Property<bool?>("Status")
                         .HasColumnType("bit");
 
                     b.Property<DateTime>("Updatedate")
@@ -79,7 +82,9 @@ namespace LoyaltyPrime.Presistance.Migrations
                 {
                     b.HasOne("LoyaltyPrime.Data.Enities.Member", "Member")
                         .WithMany("Accounts")
-                        .HasForeignKey("MemberId");
+                        .HasForeignKey("MemberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

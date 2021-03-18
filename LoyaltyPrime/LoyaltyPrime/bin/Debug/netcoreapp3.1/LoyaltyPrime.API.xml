@@ -14,7 +14,7 @@
             Account Services
             </summary>
         </member>
-        <member name="M:LoyaltyPrime.API.Controllers.AccountController.#ctor(System.Lazy{LoyaltyPrime.Service.Interfaces.Services.IAccountService})">
+        <member name="M:LoyaltyPrime.API.Controllers.AccountController.#ctor(System.Lazy{LoyaltyPrime.Service.Interfaces.Services.IAccountService},System.Lazy{LoyaltyPrime.Service.Interfaces.Services.IMediaService})">
             <summary>
             Constractor
             </summary>
@@ -45,6 +45,13 @@
              <returns>Redeemed Message</returns>
             <response code="200">Returns the newly created member</response>
             <response code="400">If the member is null</response> 
+        </member>
+        <member name="M:LoyaltyPrime.API.Controllers.AccountController.ExportMember(LoyaltyPrime.DTO.Models.DTODownloadSearchCreateria)">
+            <summary>
+            Export Member
+            </summary>
+            <param name="searchModel"></param>
+            <returns></returns>
         </member>
         <member name="T:LoyaltyPrime.API.Controllers.MemberController">
             <summary>

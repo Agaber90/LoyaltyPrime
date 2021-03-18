@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LoyaltyPrime.Presistance.Migrations
 {
     [DbContext(typeof(LoyaltyPrimeDBEntities))]
-    [Migration("20210309031555_IntiaialMigration")]
-    partial class IntiaialMigration
+    [Migration("20210317223023_IntialMigration")]
+    partial class IntialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,41 @@ namespace LoyaltyPrime.Presistance.Migrations
                 .HasAnnotation("ProductVersion", "3.1.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("LoyaltyPrime.Data.Enities.Account", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<decimal>("Balance")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("Createdate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsRedeemedPoint")
+                        .HasColumnType("bit");
+
+                    b.Property<long>("MemberId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool?>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("Updatedate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MemberId");
+
+                    b.ToTable("Account");
+                });
 
             modelBuilder.Entity("LoyaltyPrime.Data.Enities.Member", b =>
                 {
@@ -43,6 +78,15 @@ namespace LoyaltyPrime.Presistance.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Member");
+                });
+
+            modelBuilder.Entity("LoyaltyPrime.Data.Enities.Account", b =>
+                {
+                    b.HasOne("LoyaltyPrime.Data.Enities.Member", "Member")
+                        .WithMany("Accounts")
+                        .HasForeignKey("MemberId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
