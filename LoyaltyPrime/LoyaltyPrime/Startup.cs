@@ -7,6 +7,7 @@ using LoyaltyPrime.Service.Implementation.ServiceValidators;
 using LoyaltyPrime.Service.Implementation.Validators;
 using LoyaltyPrime.Service.Interfaces;
 using LoyaltyPrime.Service.Interfaces.Factories;
+using LoyaltyPrime.Service.Interfaces.FileServices;
 using LoyaltyPrime.Service.Interfaces.Repositories;
 using LoyaltyPrime.Service.Interfaces.Services;
 using LoyaltyPrime.Service.Interfaces.ServiceValidators;
@@ -56,6 +57,12 @@ namespace LoyaltyPrime
             services.AddTransient(provider => new Lazy<IAccountRepository>(provider.GetService<IAccountRepository>));
             services.AddTransient<IAccountFactory, AccountFactory>();
             services.AddTransient(provider => new Lazy<IAccountFactory>(provider.GetService<IAccountFactory>));
+            services.AddTransient<IMediaService, MediaService>();
+            services.AddTransient(provider => new Lazy<IMediaService>(provider.GetService<IMediaService>));
+            services.AddTransient<IFileServiceValidator, FileServiceValidator>();
+            services.AddTransient(provider => new Lazy<IFileServiceValidator>(provider.GetService<IFileServiceValidator>));
+            services.AddTransient<IFileService, FileValidator>();
+            services.AddTransient(provider => new Lazy<IFileService>(provider.GetService<IFileService>));
 
             services.AddControllers();
             services.AddSwaggerGen();

@@ -91,6 +91,12 @@ namespace LoyaltyPrime.API.Controllers
             return Ok(reedemPoints);
         }
 
+        //[HttpPost]
+        //public async Task<IActionResult> ImportMember()
+        //{
+
+        //}
+
         /// <summary>
         /// Export Member
         /// </summary>

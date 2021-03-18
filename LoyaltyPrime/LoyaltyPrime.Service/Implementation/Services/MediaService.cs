@@ -49,5 +49,7 @@ namespace LoyaltyPrime.Service.Implementation.Services
             }
             return new ServiceResultList<DTOMemberData>();
         }
+
+        //public async Task<ServiceResultList<DTOMemberData>> ImportMember()
     }
 }
